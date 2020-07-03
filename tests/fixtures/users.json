@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "5ee11dec0226e33cd7c4d6bd"
+  },
+  "user_id": 840851,
+  "first_name": "Mikhael",
+  "last_name": "Korneev",
+  "username": "korneevm",
+  "chat_id": 840851,
+  "emoji": "😺",
+  "anketa": [
+    {
+      "name": "Михаил Корнеев",
+      "rating": 5,
+      "comment": "Привет",
+      "created": {
+        "$date": "2020-06-10T21:35:53.427Z"
+      }
+    },
+    {
+      "name": "Mike Korneev",
+      "rating": 4,
+      "created": {
+        "$date": "2020-06-10T21:38:10.490Z"
+      }
+    }
+  ],
+  "subscribed": false
+}]

@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "5ef7813fdd17e4ff14952aa2"
+  },
+  "image_name": "images/cat_new.jpg",
+  "votes": [
+    {
+      "user_id": 840852,
+      "vote": 1
+    },
+    {
+      "user_id": 840851,
+      "vote": 1
+    },
+    {
+      "user_id": 100,
+      "vote": 1
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5ef783a021f35f3d269826dc"
+  },
+  "image_name": "images/cat4.jpg",
+  "votes": [
+    {
+      "user_id": 840851,
+      "vote": -1
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5ef79d32887ac509a18a0a3e"
+  },
+  "image_name": "images/cat1.jpg",
+  "votes": [
+    {
+      "user_id": 840852,
+      "vote": -1
+    },
+    {
+      "user_id": 840851,
+      "vote": 1
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5ef7a6beb639dca8bfa0d942"
+  },
+  "image_name": "images/cat2.jpg",
+  "votes": [
+    {
+      "user_id": 840851,
+      "vote": 1
+    }
+  ]
+}]
