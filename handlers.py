@@ -5,7 +5,7 @@ from random import choice
 from db import (db, get_or_create_user, subscribe_user, unsubscribe_user, save_cat_image_vote,
                 user_voted, get_image_rating)
 from jobs import alarm
-from utils import is_cat, main_keyboard, play_random_numbers, get_bot_number, cat_rating_inline_keyboard
+from utils import has_object_on_image, main_keyboard, play_random_numbers, get_bot_number, cat_rating_inline_keyboard
 
 
 def greet_user(update, context):
@@ -74,7 +74,7 @@ def check_user_photo(update, context):
     user_photo = context.bot.getFile(update.message.photo[-1].file_id)
     file_name = os.path.join("downloads", f"{user_photo.file_id}.jpg")
     user_photo.download(file_name)
-    if is_cat(file_name):
+    if has_object_on_image(file_name, 'cat'):
         update.message.reply_text("Обнаружен котик, добавляю в библиотеку")
         new_filename = os.path.join("images", f"cat_{user_photo.file_id}.jpg")
         os.rename(file_name, new_filename)
